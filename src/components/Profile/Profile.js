@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Avatar, Description, InfoProfile, Label, Location, Quantity, Stat, Stats, Tag, Username } from './Profile.styled';
+import {  Avatar, Description, InfoProfile, Label, Location, Quantity, Stat, Stats, Tag, Username } from './Profile.styled';
 
 export default function Profile ({
   username, 
@@ -11,14 +11,11 @@ export default function Profile ({
   return (
 <InfoProfile>
   <Description>
-    <Avatar> 
-    <img  width={250} height={250}
-      src={avatar}
-      alt={avatar}
-     
-    />
-    </Avatar>
     
+    <Avatar  
+      src={avatar}
+      alt={avatar} 
+    />
     <Username>{username}</Username>
     <Tag>{tag}</Tag>
     <Location>{location}</Location>
