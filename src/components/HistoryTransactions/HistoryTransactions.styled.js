@@ -9,6 +9,7 @@ border: 1px solid #7bacd1;
 
 export const Thead = styled.thead`
 background-color: #7bacd1;
+color: #fff;
 `;
 
 export const Tbody = styled.tbody`
