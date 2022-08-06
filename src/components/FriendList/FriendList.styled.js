@@ -5,6 +5,7 @@ export const FriendWrapper = styled.ul`
 	margin: auto;
 	border: solid 1px #2f5f2f;
   padding: 0;
+  
 `;
 
 
