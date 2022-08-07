@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { Avatar, FriendItem, Name, StatusOnline } from './FriendList.styled';
 
 export default function FriendListItem({ avatar, name, isOnline }){
-   const status = isOnline ? 'green' : 'red';
+   
    
   return(
     
   <FriendItem>
-    <StatusOnline  style={{ backgroundColor: status }}></StatusOnline>
+    <StatusOnline isOnline={isOnline} ></StatusOnline>
       <Avatar src={avatar} 
         alt="User avatar" 
         width="48" />

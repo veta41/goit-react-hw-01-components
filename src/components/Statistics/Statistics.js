@@ -13,13 +13,15 @@ export default function Statistics ({title, stats})
   return (
 
 <StatisticsWripper>
-  <Title>{title}</Title>
+
+  {title ? <Title>{title}</Title> : '' }
+  
 
   <StatList>
-    {stats.map(stat => (
-      <StatListItem key={stat.id} style={{ backgroundColor: getRandomHexColor() }}>
-      <Label>{stat.label}</Label>
-      <Percentage>{stat.percentage}%</Percentage>
+    {stats.map(({id, label, percentage }) => (
+      <StatListItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
     </StatListItem>
     ))}
     
