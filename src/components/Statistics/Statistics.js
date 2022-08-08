@@ -10,7 +10,7 @@ export default function Statistics ({title, stats})
 
 <StatisticsWripper>
 
-  {title ? <Title>{title}</Title> : '' }
+  {title && <Title>{title}</Title>  }
   
 
   <StatList>
